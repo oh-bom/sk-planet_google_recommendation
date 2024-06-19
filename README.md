@@ -9,6 +9,8 @@ Work Flow:
 
 ```
 issue 템플릿 통해 일감 생성 > 발급된 일감 번호로 브런치 생성 > 브런치에 코드 커밋 > Pull Requests(코드 리뷰) > Main branch 에 Merge
+
+브런치는 닉네임-이슈 번호 ex. syleeie-1 로 셋업합니다.
 ```
 
 Projects 안에서 프로젝트 단위로 issue 단위로 확인할 예정입니다.
