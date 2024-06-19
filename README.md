@@ -8,7 +8,7 @@ ASAC 5기 Data Analysis Project (google map recommendation system)
 Work Flow:
 
 ```
-issue 템플릿 통해 일감 생성 > 발급된 일감 번호로 브런치 생성 > 브런치에 코드 커밋 > Pull Requests > Main branch에 Merge 되도록
+issue 템플릿 통해 일감 생성 > 발급된 일감 번호로 브런치 생성 > 브런치에 코드 커밋 > Pull Requests(코드 리뷰) > Main branch 에 Merge
 ```
 
 Projects 안에서 프로젝트 단위로 issue 단위로 확인할 예정입니다.
