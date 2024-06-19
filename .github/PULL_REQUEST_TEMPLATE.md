@@ -1,19 +1,23 @@
-<!--
-  Choose one of the following by uncommenting it:
+<!-- 
+PR 제목에는  이슈 번호를 반드시 적어주세요!
+ex) [XXX] 작업 내용에 대한 제목
+
+리뷰가 필요한 경우 Reviewer 를 추가해주세요
+Reviewer 를 위해 아래의 본문 내용을 작성해주세요
 -->
+## 주요 변경 사항 (필수)
+- 
 
-<!-- This is a bug fix. -->
-<!-- This is an enhancement or feature. -->
-<!-- This is a documentation change. -->
+## 리뷰가 필요한 부분 / 참고 사항 (선택)
+- 
 
-## Summary
+## 코드 리뷰 체크리스트
 
-<!--
-  Provide a description of what your pull request changes.
--->
+- [ ] 코드는 이해하기 쉽게 잘 작성되었는지?
+- [ ] 중복된 코드는 아닌지?
+- [ ] 네이밍은 적절한지?
+- [ ] 테스트는 충분하게 수행되었는지?
+- [ ] 해당 jira 이슈와 동떨어진 변경사항이 있진 않는지?
 
-## Context
-
-<!--
-  Is this related to any GitHub issue(s)?
--->
+### Reviewer 와 Reviewee 의 효율적인 협업을 위한 가이드
+- 효율적인 협업을 위해 아래의 git 정책 문서 및 PR 가이드 문서를 숙지해주세요!
