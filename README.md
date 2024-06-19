@@ -14,7 +14,7 @@ issue 템플릿 통해 일감 생성 > 발급된 일감 번호로 브런치 생�
 Projects 안에서 프로젝트 단위로 issue 단위로 확인할 예정입니다.
 
 
-| 이름   | Gitlab Username | ... |
+| 이름   | Github Username | ... |
 |--------|-----|-----|
 | 이상열 |syleeie2310||
 | 이설하 |Seolhada||
