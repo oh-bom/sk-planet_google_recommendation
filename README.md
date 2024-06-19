@@ -22,3 +22,18 @@ Projects 안에서 프로젝트 단위로 issue 단위로 확인할 예정입니
 | 임혜원 |oh-bom||
 | 장윤정 |||
 | 임수정 |soojeonglim||
+
+- - -
+
+### Ground Rules
+
+1. **[ISSUE-ID][커밋 태그] 내용** / 커밋 태그 : Add, Fix, Change, Improve, Migrate 중 하나로 업로드 합니다. 
+2. branch 는 트렁크 기반 개발 전략을 따릅니다. (https://tech.mfort.co.kr/blog/2022-08-05-trunk-based-development/)
+3. 디펜던시 관리가 필요한 모듈/라이브러리 환경을 기록한다.
+4. 학습 데이터, 모델 객체는 업로드하지 않는다.
+
+Git 정책 가이드
+코드리뷰 가이드
+
+- - -
+### Contributors
