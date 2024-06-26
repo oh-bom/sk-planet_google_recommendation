@@ -22,7 +22,7 @@ Projects 안에서 프로젝트 단위로 issue 단위로 확인할 예정입니
 | 이설하 |Seolhada||
 | 양희선 |heesunTukorea||
 | 임혜원 |oh-bom||
-| 장윤정 |||
+| 장윤정 |YoonjungJang||
 | 임수정 |soojeonglim||
 
 - - -
