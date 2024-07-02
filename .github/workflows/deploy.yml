@@ -13,7 +13,7 @@ jobs:
 
       - name: Databricks Repos Pull (PROD)
         run: |
-          curl -X POST "${{ secrets.DATABRICKS_HOST }}/api/2.0/repos/${{ secrets.DATABRICKS_PROD_REPO_ID }}/pull" \
+          curl -X PATCH "${{ secrets.DATABRICKS_HOST }}/api/2.0/repos/${{ secrets.DATABRICKS_PROD_REPO_ID }}/pull" \
                 -H "Authorization: Bearer ${{ secrets.DATABRICKS_TOKEN }}" \
                 -H "Content-Type: application/json" \
                 -d '{"branch": "main"}'
