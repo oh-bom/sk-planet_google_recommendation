@@ -6,27 +6,12 @@ on:
 
 jobs:
   build:
-    runs-on: [ self-hosted ]
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      
-      - name: Install Databricks CLI
-        run: |
-          pip install databricks-cli
-
-      - name: Configure Databricks CLI
-        run: |
-          databricks configure --token <<EOF
-          ${{ secrets.DATABRICKS_HOST }}
-          ${{ secrets.DATABRICKS_TOKEN }}
-          EOF
-
       - name: Databricks Repos Pull (PROD)
         run: |
-          databricks repos update --repo-id=${{ secrets.DATABRICKS_PROD_REPO_ID }} --branch=main
+          curl -X POST https://${{ secrets.DATABRICKS_HOST }}/api/2.0/repos/${{ secrets.DATABRICKS_PROD_REPO_ID }}/pull \
+                -H 'Authorization: Bearer ${{ secrets.DATABRICKS_TOKEN }}'
