@@ -3,33 +3,6 @@ del df
 
 # COMMAND ----------
 
-
-# 필요한 라이브러리 임포트
-from pyspark.sql import SparkSession
-
-# Spark 세션 생성 (이미 생성되어 있으면 생략 가능)
-spark = SparkSession.builder.appName("example").getOrCreate()
-
-# 예제 DataFrame 생성
-data = [("James", "Smith", "USA", "CA"),
-        ("Michael", "Rose", "USA", "NY"),
-        ("Robert", "Williams", "USA", "CA"),
-        ("Maria", "Jones", "USA", "FL")]
-
-columns = ["firstname", "lastname", "country", "state"]
-
-df = spark.createDataFrame(data, schema=columns)
-
-# DataFrame을 CSV 파일로 저장
-output_path = "/dbfs/FileStore/tables/output.csv"  # 원하는 파일 경로 설정
-df.coalesce(1).write.option("header", "true").csv(output_path)
-
-# COMMAND ----------
-
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC # meta data union
 
@@ -123,13 +96,6 @@ df.write.mode('overwrite').format("delta").saveAsTable('hive_metastore.default.m
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select MISC.Payments
-# MAGIC from hive_metastore.default.meta_data
-# MAGIC where MISC.Payments is not null
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC
 
@@ -191,7 +157,3 @@ review_df.write.mode('overwrite').format("delta").saveAsTable('hive_metastore.de
 # MAGIC %sql
 # MAGIC select count(*)
 # MAGIC from hive_metastore.default.review_data
-
-# COMMAND ----------
-
-
