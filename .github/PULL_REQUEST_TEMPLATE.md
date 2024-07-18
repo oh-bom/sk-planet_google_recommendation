@@ -21,4 +21,4 @@ Reviewer 를 위해 아래의 본문 내용을 작성해주세요
 
 ### Reviewer 와 Reviewee 의 효율적인 협업을 위한 가이드
 - 효율적인 협업을 위해 아래의 git 정책 문서 및 PR 가이드 문서를 숙지해주세요!
-- https://github.com/da-analysis/asac_5_dataanalysis/blob/main/PR_Guide.md
+- https://github.com/da-analysis/asac_5_dataanalysis/blob/syleeie-1/PR_Guide.md
