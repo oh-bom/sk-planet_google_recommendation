@@ -27,6 +27,19 @@ display(data)
 
 # COMMAND ----------
 
+data=data.fillna({"state":"N/A"})
+
+# COMMAND ----------
+
+# 폐점 데이터 날리기 전
+data.count()
+
+# COMMAND ----------
+
+data.filter(col("state")!="Permanently closed").count()
+
+# COMMAND ----------
+
 data=data.filter(col("state")!="Permanently closed")
 
 # COMMAND ----------
@@ -478,7 +491,7 @@ get_stats(final)
 # COMMAND ----------
 
 # 최종 테이블 저장
-final5.write.mode("overwrite").saveAsTable(f"hive_metastore.test.{target_region}_cocount_final5")
+final5.write.mode("overwrite").saveAsTable(f"hive_metastore.test.{target_region}_cocount_final6")
 
 # COMMAND ----------
 
